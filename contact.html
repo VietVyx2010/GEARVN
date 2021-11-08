@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>GEARVN LIÊN HỆ</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+      main {
+        background-image: url("assets/img/contact/contact-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 60px;
+        padding: 70px 100px;
+        color: rgb(255, 255, 255);
+      }
+      h2 {
+        padding-bottom: 40px;
+      }
+      @media only screen and (min-width: 420px) {
+        textarea {
+          height: 120px;
+        }
+        main button {
+          padding: 0;
+          flex: 0 0 auto;
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .col-md-12 {
+          flex: 0 0 auto;
+          width: 100%;
+        }
+        h2 {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        .small {
+          font-size: 1rem;
+        }
+        main button {
+          padding: 0;
+          flex: 0 0 auto;
+          width: 100%;
+        }
+        .small {
+          font-size: 0.875em;
+          text-transform: uppercase;
+          text-align: center;
+          padding: 0 43%;
+        }
+      }
+      @media only screen and (min-width: 769px) {
+        input,
+        textarea {
+          max-width: 600px;
+        }
+        button .small.send {
+          text-transform: uppercase;
+          font-weight: bold;
+          text-align: center;
+          padding: 0 45%;
+        }
+        main button {
+          max-width: 600px;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
+      id="mainNav"
+    >
+      <div class="container px-5">
+        <a class="navbar-brand" href="#page-top"
+          ><img src="assets/img/Logo.png" width="130px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+            <!-- <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Trang chủ</a></li> -->
+            <li class="nav-item">
+              <a class="nav-link me-lg-3" href="index.html">Linh kiện</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-3 active" href="#">Liên hệ</a>
+            </li>
+          </ul>
+          <button
+            class="btn btn-warning btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#feedbackModal"
+          >
+            <span class="d-flex align-items-center">
+              <span class="small">Mua ngay</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <h2>LIÊN HỆ VỚI GEARVN</h2>
+      <form id="contactForm">
+        <div class="row align-items-stretch mb-8">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input
+                class="form-control"
+                id="name"
+                type="text"
+                placeholder="HỌ VÀ TÊN"
+                required="required"
+                autofocus
+              />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                id="email"
+                type="email"
+                placeholder="EMAIL"
+                required="required"
+              />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group mb-md-0">
+              <input
+                class="form-control"
+                id="phone"
+                type="tel"
+                placeholder="SỐ ĐIỆN THOẠI"
+                required="required"
+              />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group form-group-textarea mb-md-0">
+              <textarea
+                class="form-control"
+                id="message"
+                placeholder="LỜI NHẮN"
+                row="100"
+                required="required"
+              ></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+      </form>
+      <button
+        class="btn btn-warning btn-lg"
+        data-bs-toggle="modal"
+        data-bs-target="#feedbackModal"
+      >
+        <span class="d-flex align-items-center">
+          <span class="small send">GỬI</span>
+        </span>
+      </button>
+    </main>
+    <section class="section3 contact">
+      <picture>
+        <img src="assets/img/PC/BANNER-PC-4.JPG" />
+        <img src="assets/img/PC/BANNER-PC-5.JPG" />
+        <img src="assets/img/PC/BANNER-PC-6.JPG" />
+      </picture>
+    </section>
+    <!-- Footer-->
+    <footer>
+      <div class="item">
+        <div class="column1">
+          <h5>CÔNG TY TNHH THƯƠNG MẠI GEARVN</h5>
+          <p>EMAIL: CSKH@GEARVN.COM</p>
+          <p>HỆ THỐNG TỔNG ĐÀI MIỄN PHÍ: (Làm việc từ 8h00 - 22h00)</p>
+          <p>Gọi mua hàng 1800 6975</p>
+          <p>Hỗ trợ khách hàng 1800 6173</p>
+        </div>
+        <div class="column1">
+          <h5>SHOWROOM HCM (Làm việc từ 8h00 - 22h00)</h5>
+          <p>Địa chỉ 1: 78-80-82 Hoàng Hoa Thám, Phường 12, Quận Tân Bình.</p>
+          <p>Địa chỉ 2: 189 Cống Quỳnh, Phường Nguyễn Cư Trinh, Quận 1.</p>
+          <p>SHOWROOM HN (Làm việc từ 8h00 - 21h00)</p>
+          <p>Địa chỉ : 37 Ngõ 121 Thái Hà, Phường Trung Liệt, Quận Đống Đa.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
